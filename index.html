@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+  <title>Hệ thống nhận dạng rác thải</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./css/index.css" />
+  <link rel="stylesheet" href="./css/bootstrap.min.css" />
+</head>
+<body>
+  <section class="card container shadow p-3 mb-5 bg-white rounded" style="width: 700px; margin-top: 100px ;" >
+    <h1 class="text-primary text-center">Hệ thống nhận dạng rác thải</h1>
+    <section class="container">
+      <h3 class="text-center container">Status</h3>
+      <div class="text-center container" id="status"></div>
+    </section>
+
+    <section class="container">
+       <div id="file-container" style="display: none">
+        Upload an image: <input type="file" id="files" name="files[]" multiple />
+      </div> 
+      <button type="button" class="btn btn-info container" style="margin: 10px 0px;">Chụp hình</button>
+      <div id="predictions"></div>
+      
+      <!-- <img id="trash-img" src="https://picsum.photos/300" alt="trash-sample" /> -->
+      <img style="display: none" id="can" src="https://beerfridge.vn/components/com_redshop/assets/images/product/thumb/defc3b20ac9a471aab420ba6246d6d51_w550_h550.png" width=224 height=224 download="AwesomeImage.png"/>
+    </section>
+
+    <script src="index.js"></script>
+  </section>
+</body>
+</html>
